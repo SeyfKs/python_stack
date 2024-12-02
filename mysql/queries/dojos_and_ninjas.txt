@@ -1,0 +1,34 @@
+******Create 3 new dojos******
+INSERT INTO dojos (name) 
+VALUES('Coding Dojo'),('kongFu Dojo'),('Karate');
+
+******Delete the 3 dojos you just created******
+DELETE FROM dojos WHERE id>0;
+
+****** Create 3 more dojos******
+INSERT INTO dojos (name) 
+VALUES('Street Dojo'),('Kickboxing Dojo'),('MMA Dojo');
+
+****** Create 3 ninjas that belong to the first dojo******
+INSERT INTO ninjas (first_name, last_name, age , dojo_id)
+VALUES ('Kyle', 'lee', 40 , 4),('Ryo', 'Chaw', 30 , 4),('Boris', 'King', 68 , 4);
+
+****** Create 3 ninjas that belong to the second dojo******
+INSERT INTO ninjas (first_name, last_name, age , dojo_id)
+VALUES ('Jackie', 'chan', 39 , 5),('Jonny', 'English', 39 , 5),('Ip', 'Man', 99 , 5);
+
+******Create 3 ninjas that belong to the third dojo******
+INSERT INTO ninjas (first_name, last_name, age , dojo_id)
+VALUES ('Bruce', 'Lee', 80 , 6), ('Jhon', 'C.Van', 79 , 6), ('Karate', 'Kid', 29 , 6) ;
+
+******Retrieve all the ninjas from the first dojo******
+SELECT * FROM ninjas
+WHERE dojo_id= 4;
+
+******Retrieve all the ninjas from the last dojo*****
+SELECT * FROM ninjas
+WHERE dojo_id= 6;
+
+******Retrieve the last ninja's dojo****** 
+SELECT * FROM ninjas 
+WHERE id= 9;

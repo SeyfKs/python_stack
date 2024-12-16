@@ -1,0 +1,28 @@
+.container{
+    display:flex;
+    justify-content:center;
+
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.box1, .box2 {
+    width: 50px; 
+    height: 50px;
+}
+
+.box1 {
+    background-color: blue; 
+}
+
+.box2 {
+    background-color: red; 
+}

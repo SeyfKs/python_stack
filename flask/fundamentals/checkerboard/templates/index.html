@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <title>Checkerboard</title>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="titl" style="color:{{ color2 }}; background-color: {{ color }};">
+            ***** Checkerboard *****
+        </h1>
+    </div>
+    {% for k in range(0, num1) %}
+        <div class="container">
+            {% for j in range(0, num) %}
+                {% if (j + k) % 2 == 0 %}
+                    <div class="box1" style="background-color: {{ color }};"></div>
+                {% else %}
+                    <div class="box2" style="background-color: {{ color2 }};"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+</body>
+</html>

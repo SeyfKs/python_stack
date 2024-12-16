@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.tab{
+    font-size: large;
+    padding-left: 20px;
+    align-content: center;
+    border: 1px solid;
+    width: 200px;
+    height: 60px;
+}
+
+.tab1{
+    color: rgb(4, 4, 110);
+    font-size: x-large;
+    padding-left: 20px;
+    align-content: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 60px;
+}
+table {
+    border: 1px solid;
+
+    border-collapse: collapse;
+    }
